@@ -240,7 +240,7 @@ $(document)
       if(isPrime){
         $.ajax({
           type: 'POST',
-          url: 'https://script.google.com/macros/s/AKfycbwp-nkvYWAiIr5GrSarRPeR46qXBZrDm3fOgQTQYSPPi7r1Qhs/exec',
+          url: 'https://script.google.com/macros/s/AKfycbyC6HFviWmkv9cgO2uRtjImrPjDrPBUOixNSlWtS88e_Mn03Wb1/exec',
           data: {
             TeamName : $('.ui.form').form('get field', 'TeamName').val(),
             Name1 : $('.ui.form').form('get field', 'Name1').val(),
@@ -258,7 +258,7 @@ $(document)
       else{
         $.ajax({
           type: 'POST',
-          url: 'https://script.google.com/macros/s/AKfycbySAgd3ya6nAJB-Dr2HChmTQD6tNc2X7okX1RAjgrXgXGCQb7s/exec',
+          url: 'https://script.google.com/macros/s/AKfycbz843yP8PywZmHW6ruKeHs81HhShAeuygJ9kubvX40KIgv7p0Q/exec',
           data: {
             TeamName : $('.ui.form').form('get field', 'TeamName').val(),
             Name1 : $('.ui.form').form('get field', 'Name1').val(),
