@@ -33,10 +33,6 @@ $(document)
         {
           type   : 'empty',
           prompt : 'Please enter your team name'
-        },
-        {
-          type   : 'regExp[/^[a-zA-Z0-9_-]+$/]',
-          prompt : 'Team name should be english, number, - and _'
         }
         ]
       },
@@ -235,10 +231,13 @@ $(document)
     },
     onSuccess:function(event){
       event.preventDefault();
+      alert("등록기간이 마감되었습니다!");
+      return;
       var isPrime = $('#prime')[0].checked;
       $('#submitButton').attr('class',"ui disabled basic inverted right floated submit button");
       if(isPrime){
         $.ajax({
+	        //alert("등록기간이 마감되었습니다!");
           type: 'POST',
           url: 'https://script.google.com/macros/s/AKfycbyC6HFviWmkv9cgO2uRtjImrPjDrPBUOixNSlWtS88e_Mn03Wb1/exec',
           data: {
@@ -257,6 +256,7 @@ $(document)
       }
       else{
         $.ajax({
+	        //alert("등록기간이 마감되었습니다!");
           type: 'POST',
           url: 'https://script.google.com/macros/s/AKfycbz843yP8PywZmHW6ruKeHs81HhShAeuygJ9kubvX40KIgv7p0Q/exec',
           data: {
